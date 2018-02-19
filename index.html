@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Light Control Panel
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="top-bar">
+            <div id=button-container>
+                <a id="menu-button" class="button">MENU</a>
+                <a id="save-button" class="button">SAVE</a>
+                <a id="saved-note" class="button">SAVED</a>
+                <a id="invalid-note" class="button">INVALID</a>
+                <a id="error-note" class="button">ERROR</a>
+            </div>
+        </div>
+        <form id="timeForm">
+            <div id="menu-container">
+                <div id="times">
+                    <div id=up-start>
+                        <div class="vert-center-text">
+                            <span id="start">START</span>
+                            <br>
+                            <input type="text" id="h1" name="startHour" class="time-box" maxlength="2" value="12">&nbsp;:
+                            <input type="text" id="m1" name="startMin" class="time-box" maxlength="2" value="59">
+                            <input type="radio" id="a1" name="startAMPM" value="am">
+                            <label for="a1">AM</label>
+                            <input type="radio" id="p1" name="startAMPM" value="pm" checked>
+                            <label for="p1">PM</label>
+                        </div>
+                    </div>
+
+                    <div id=down-end>
+                        <div class="vert-center-text">
+                            <span id="end">END</span>
+                            <br>
+                            <input type="text" id="h2" name="endHour" class="time-box" maxlength="2" value="12">&nbsp;:
+                            <input type="text" id="m2" name="endMin" class="time-box" maxlength="2" value="59">
+
+                            <input type="radio" id="a2" name="endAMPM" value="am" checked>
+                            <label for="a2">AM</label>
+                            <input type="radio" id="p2" name="endAMPM" value="pm">
+                            <label for="p2">PM</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar">
+                    <div id="up-button">
+                        <div class="vert-center-text">+</div>
+                    </div>
+                    <div id="down-button">
+                        <div class="vert-center-text">-</div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div id="on-container">
+            <div id="on-text-container" class="vert-center-text">
+                |
+            </div>
+        </div>
+
+        <div id="off-container">
+            <div id="off-text-container" class="vert-center-text">
+                O
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="jscript.js"></script>
+</body>
+
+</html>
+

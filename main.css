@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #2B2B2B;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently not supported by any browser */
+}
+label {
+    background: #2B2B2B;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+}
+input[type="radio"] {
+    visibility: hidden;
+}
+input:checked + label {
+    background: white;
+    color: #2B2B2B;
+    padding: 12px;
+}
+.button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+.vert-center-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.time-box {
+    height: 100px;
+    width: 120px;
+    font-size: 80px;
+    color: #2B2B2B;
+    text-align: center;
+}
+#wrapper {
+    font-family: Arial;
+    text-align: center;
+    height: 100vh;
+    background: #2B2B2B;
+}
+#top-bar {
+    position: relative;
+    height: 10vh;
+    width: 100%;
+}
+#button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#menu-button {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+#menu-button:active {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: #2B2B2B;
+    background: white;
+    border: 3px solid white;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+#save-button {
+    display: none;
+    width: 200px;
+    padding: 8px;
+    color: white;
+    border: 3px solid white;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+#save-button:active {
+    display: none;
+    width: 200px;
+    padding: 8px;
+    color: #2B2B2B;
+    background: white;
+    border: 3px solid white;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+#saved-note {
+    display: none;
+    width: 200px;
+    padding: 8px;
+    color: #2B2B2B;
+    background: #02D472;
+    border: 3px solid #02D472;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+#invalid-note {
+    display: none;
+    width: 200px;
+    padding: 8px;
+    color: #2B2B2B;
+    background: #FF4545;
+    border: 3px solid #FF4545;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+#error-note {
+    display: none;
+    width: 200px;
+    padding: 8px;
+    color: #2B2B2B;
+    background: #FF9757;
+    border: 3px solid #FF9757;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+#menu-container {
+    display: none;
+    font-size: 56px;
+    color: #2B2B2B;
+    height: 50vh;
+    width: 100%;
+}
+#times {
+    float: left;
+    height: 100%;
+    width: 70%;
+    color: white;
+}
+#up-start {
+    position: relative;
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+}
+#down-end {
+    position: relative;
+    display: inline-block;
+    height: 50%;
+    width: 100%;
+}
+#start {
+    font-weight: bold;
+    color: white;
+}
+#end {
+    font-weight: bold;
+    color: white;
+}
+#sidebar {
+    float: right;
+    height: 100%;
+    width: 30%;
+    background: #2B2B2B;
+}
+#up-button {
+    position: relative;
+    display: inline-block;
+    font-size: 100px;
+    color: #02D472;
+    height: 50%;
+    width: 100%;
+}
+#down-button {
+    position: relative;
+    display: inline-block;
+    font-size: 100px;
+    color: #FF4545;
+    height: 50%;
+    width: 100%;
+}
+#on-container {
+    position: relative;
+    display: inline-block;
+    font-size: 100px;
+    color: #02D472;
+    height: 45vh;
+    width: 100%;
+}
+#off-container {
+    position: relative;
+    display: inline-block;
+    font-size: 100px;
+    color: #FF4545;
+    height: 45vh;
+    width: 100%;
+}
+
